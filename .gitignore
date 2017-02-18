@@ -2,7 +2,5 @@
 base
 bourbon
 neat
-*.css.map
-*.css
 package.json
 yarn.lock
