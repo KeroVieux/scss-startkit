@@ -1,5 +1,6 @@
-@import "inc/mixin";
-@import "../node_modules/bourbon-neat/core/neat";
+@import "lib/mixin";
+@import "bourbon/bourbon";
+@import "neat/neat";
 $neat-grid: (
   gutter: 12px,
 );
@@ -12,6 +13,19 @@ $neat-grid: (
     }
     .push-#{$col}{
       @include grid-push($col);
+    }
+    $col: $col + 1;
+  }
+}
+.flex-container{
+  @include align-items(stretch);
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(flex-start);
+  $col:1;
+  @while $col <= 12{
+    .col-#{$col}{
+      @include flex($col);
     }
     $col: $col + 1;
   }

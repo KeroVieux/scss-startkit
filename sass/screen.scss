@@ -1,23 +1,4 @@
-@import "../node_modules/bourbon/app/assets/stylesheets/bourbon";
-@import "inc/mixin";
-@import "inc/generics-px";
-@import "inc/basic";
-@import "inc/ie-warning";
-@import "global";
-.parent {
-  @include align-items(stretch);
-  @include display(flex);
-  @include flex-direction(row);
-  @include justify-content(flex-start);
-}
-
-.parent > .child {
-  @include flex(1);
-}
-.topic_box{
-  cursor: pointer;
-  @extend %transition_link;
-  &:hover{
-    @extend .bg-light;
-  }
-}
+@import "bourbon/bourbon";
+@import "lib/mixin";
+@import "lib/basic";
+@import "lib/ie-warning";

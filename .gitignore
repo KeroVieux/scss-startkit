@@ -1,1 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
+base
+bourbon
+neat
+*.css.map
+*.css
+package.json
+yarn.lock
