@@ -4,11 +4,3 @@
 @function white($opacity){
   @return rgba(255,255,255,$opacity)
 }
-@mixin animated($name, $duration) {
-  @include animation-name($name);
-  @include animation-duration($duration);
-  @include animation-fill-mode(both);
-}
-@mixin transition_link($prop:all,$time:0.7s){
-  @include transition($prop $time);
-}

@@ -13,12 +13,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
-body{
-  @include animated(fadeIn, 1000ms);
-  position: relative;
-}
 a{
-  @extend %transition_link;
   &:hover,&:focus,&:active{
     text-decoration: none;
   }
